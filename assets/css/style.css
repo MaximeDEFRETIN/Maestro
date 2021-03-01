@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'Calligraffitti';
+    src: url('../fonts/Calligraffitti-Regular.ttf') format('truetype')
+}
+
+body {
+    font-family: 'Calligraffitti';
+    background-color: #F5F7BF;
+}
+.bacckgroundE {
+    border-radius: 20px;
+    background-color: #f6eeab;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+.separateur {
+    border: 2px solid;
+    border-radius: 50px
+}
+
+#accueil {
+    font-size: 1.25em;
+}
+.textright {
+    text-align:right;
+}
+.center {
+    text-align:center;
+}
+
+.marginLeft {
+   margin-left: 3em;
+}
+.marginTopMin {
+    margin-top:2%;
+}
+.marginTop {
+    margin-top:5%;
+}
+.marginBottomMin {
+    margin-bottom:2%;
+}
+.marginBottom {
+    margin-bottom:5%;
+}
+.marginTopMax {
+    margin-top:10%;
+}
+.vCenter {
+    text-align:center;
+    margin:3% 0;
+}
+.vCenterh {
+    line-height:3em;
+}
+.marginl {
+    margin-left:5%;
+    margin-right:5%;
+}
+.textStyle {
+    font-weight:bold;
+}
+input[type=text], input[type=password], input[type=email], input[type=search] {
+    border:none;
+    border-radius:5px;
+}
+input[type=search]{
+    border-bottom:3px solid #C03000;
+}
+input[type=search]:focus {
+    box-shadow:none;
+    border-color:#C03000;
+}
+
+.btn {
+    color:#000000;
+}
+button[class*="btn btn-info btn-lg"]{
+    background-color:#dbd56e;
+    margin-top:2%;
+}
+
+.flex {
+    display:flex;
+    justify-content:center;
+}
+
+.error {
+    height:auto;
+    border-radius:5px;
+    position:absolute;
+    z-index:2;
+}
+
+img {
+    margin: 0 auto;
+}
+
+.display {
+    height:25%;
+    overflow:auto;
+}
+caption {
+    font-size: 2em;
+    font-weight:bold;
+    font-style: italic;
+}
+
+.pseudoUsersComments {
+    font-style:italic;
+    font-weight:bold;
+}
+
+.namePartitionComments {
+    font-style:italic;
+}
+
+/*Piano*/
+.instrumentPiano{
+    width:840px;
+    height:200px;
+}
+.key{
+    width:100%;
+    border:1px solid grey;
+    border-radius:0 0 5px 5px;
+    text-align:center;
+    box-shadow:0 5px 1px rgba(32,32,32,0.2);
+}
+.white{
+    background-color:white;
+    height:100%;
+    line-height:23.3em;
+}
+.black{
+    background-color:black;
+    height:150px;
+    width:30px;
+    z-index:50;
+    color:white;
+    position:absolute;
+    line-height:17em;
+}
+@media screen and (min-width: 1281px) {
+    #C3s{
+        left:18.7em;
+    }
+    #D3s{
+        left:21.4em;
+    }
+    #F3s{
+        left:26.7em;
+    }
+    #G3s{
+        left:29.4em;
+    }
+    #A3s{
+        left:32em;
+    }
+    #C4s{
+        left:37.4em;
+    }
+    #D4s{
+        left:40em;
+    }
+    #F4s{
+        left:45.3em;
+    }
+    #G4s{
+        left:48em;
+    }
+    #A4s{
+        left:50.7em;
+    }
+    #C5s{
+        left:56em;
+    }
+    #D5s{
+        left:58.7em;
+    }
+    #F5s{
+        left:64em;
+    }
+    #G5s{
+        left:66.6em;
+    }
+    #A5s{
+        left:69.3em;
+    }
+}
+/*Édition de partition*/
+.part{
+    width:100%;
+}
+.blackLine{
+    background: linear-gradient(to top, #FFFFFF 20%, #000000, #FFFFFF 28%);;
+    height:1.75em;
+}
+.spacing{
+    background-color:#FFFFFF;
+    height:1.75em;
+}
+.blackLineAdd{
+    background: linear-gradient(to top, #FFFFFF 20%, #000000, #FFFFFF 28%);
+    opacity:0.6;
+    height:1.75em;
+}
+.spacingAdd{
+    background-color:#FFFFFF;
+    opacity:0.6;
+    height:1.75em;
+}
+.flexColumn{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+.partitionInstrument{
+    height:30em;
+    margin-bottom:2%;
+    overflow:auto;
+}
+.partitionPiano{
+    height:40em;
+    margin-bottom:2%;
+    overflow:auto;
+}
+.pitch{
+    margin-bottom:2%;
+    width:2%;
+}
+
+/*Tablette paysage*/
+@media all and (min-width:961px) and (max-width:1280px) {
+    .black{
+        top:49.39em;
+        width:3%;
+    }
+    #C3s{
+        left:6.15em;
+    }
+    #D3s{
+        left:9em;
+    }
+    #F3s{
+        left:14.75em;
+    }
+    #G3s{
+        left:17.5em;
+    }
+    #A3s{
+        left:20.5em;
+    }
+    #C4s{
+        left:26.2em;
+    }
+    #D4s{
+        left:29em;
+    }
+    #F4s{
+        left:34.6em;
+    }
+    #G4s{
+        left:37.5em;
+    }
+    #A4s{
+        left:40.5em;
+    }
+    #C5s{
+        left:46em;
+    }
+    #D5s{
+        left:49em;
+    }
+    #F5s{
+        left:51.8em;
+    }
+    #G5s{
+        left:57.67em;
+    }
+    #A5s{
+        left:60.5em;
+    }
+}
+
+@media all and (max-width:479px) and (min-width: 320px) {
+    #imgIndex {
+        display: none;
+    }
+}

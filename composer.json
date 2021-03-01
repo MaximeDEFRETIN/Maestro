@@ -1,0 +1,13 @@
+{
+    "name": "root/maestro",
+    "description": "Projet personnel lié à la musique",
+    "authors": [
+        {
+            "name": "MaximeDEFRETIN",
+            "email": "maxime.defretin@laposte.net"
+        }
+    ],
+    "require": {
+        "setasign/fpdf": "^1.8"
+    }
+}

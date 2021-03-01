@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    #On utilise le module +FollowSymlinks, présent sur le serveur.
+    Options +FollowSymlinks
+    #Active ou désactive le réécriture (on -> active la réécriture)
+    RewriteEngine On
+    #Permet la réécriture des pages urls
+    RewriteRule ^/$ index.php [L]
+    RewriteRule ^Batterie$ drums.php [L]
+    RewriteRule ^Piano$ piano.php [L]
+    RewriteRule ^Modification-profil$ editingprofil.php [L]
+    RewriteRule ^Metronome$ metronome.php [L]
+    RewriteRule ^Profil$ profil.php [L]
+    RewriteRule ^Partitions$ partition.php [L]
+    RewriteRule ^Partition-autres-utilisateurs-([0-9]+)$ displayPartitionResult.php?id=$1 [L]
+    RewriteRule ^Recuperation-mot-de-passe-([0-9]+)$ passwordRecovery.php?keyUser=$1 [L]
+</IfModule>

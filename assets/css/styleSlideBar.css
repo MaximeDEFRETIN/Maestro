@@ -1,0 +1,38 @@
+.flexForm {
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+    align-items:center;
+}
+
+#results {
+    position:absolute;
+    z-index:1;
+    top: 15%;
+    background-color: #f6eeab;
+}
+#navBar {
+    margin-bottom:0;
+}
+
+/*Mobile en mode portrait, petit format*/
+@media (max-width:320px) {
+    #results {
+        top: 12%;
+    }
+}
+/*Mobile paysage*/
+@media (max-width:479px) and (min-width: 320px) {
+    #results {
+        top: 12%;
+    }
+}
+/*Mobile paysage et tablette portrait*/
+@media (min-width:480px) and (max-width:959px) {
+    #results {
+        top: 18%;
+    }
+    #imgIndex {
+        display: none;
+    }
+}
